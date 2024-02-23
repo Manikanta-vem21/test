@@ -147,6 +147,85 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(41, 39, 39);
     border-radius: 5px;
 }
+.ngr{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.5rem;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 50px;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+   
+}
+.gi1{
+    background-color:#1F2544;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    
+}
+.gi2{
+    
+    grid-row: span 2;
+    border-radius: 10px;
+}
+.gi2>img{
+    box-shadow: 0 0 80px rgba(12, 156, 252, 0.486);
+}
+.gi3{
+    background-color: #474F7A;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.gi3>img{
+    
+    width: 35vw;
+    height:35vh;
+    margin-left: 20px;
+    margin-top: 40px;
+    border-radius: 15px;
+    
+}
+.gi1>img{
+    
+    width: 35vw;
+    height:35vh;
+    margin-left: 20px;
+    margin-top: 40px;
+    border-radius: 15px;
+    
+}
+.gi2>img{
+    border-radius: 15px;
+
+}
+.p1{
+    color: rgb(255, 255, 255);
+    margin-top: 100px;
+    font-family: "Kode Mono";
+    font-size: 23px;
+}
+.p3{
+    color: rgb(255, 255, 255);
+    margin-top: 60px;
+    font-family: "Kode Mono";
+    font-size: 23px;
+}
+.Bluetooth{
+    font-size: 0px;
+    font-family: "press start 2p";
+}
+.Bluetooth2{
+    font-size: 0px;
+    font-family: "press start 2p";
+}
+
 @media(max-width:390px){
     .container{
         display: flex;
@@ -268,5 +347,79 @@ p{
     margin-right: 80px;
    margin-top: 30px;
    margin-bottom: 30px;
+}
+    .ngr{
+    display: grid;
+    grid-template-columns: auto;
+    grid-row: auto;
+    margin-right: 22px;
+    
+    width: auto;
+    height: auto;
+}
+.gi1{
+    background-color:#1F2544;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+    
+
+}
+.p1{
+    color: rgb(255, 255, 255);
+    margin-top: 100px;
+    font-family: "Kode Mono";
+    font-size: 15px;
+}
+.p3{
+    color: rgb(255, 255, 255);
+    margin-top: 60px;
+    font-family: "Kode Mono";
+    font-size: 15px;
+}
+.gi3{
+    background-color:#474F7A;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+}
+.gi3>img{
+    
+    width: 75vw;
+    height:20vh;
+    margin-left: 15px;
+    margin-top: 40px;
+    border-radius: 15px;
+    
+}
+.gi1>img{
+    
+    width: 75vw;
+    height:20vh;
+    margin-left: 15px;
+    margin-top: 40px;
+    border-radius: 15px;
+    
+}
+.gi2>img{
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-top: 20px;
+
+
+}
+.Bluetooth{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Bluetooth2{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 }
