@@ -425,11 +425,12 @@ p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .inner2{
-font-size: 37px;
+font-size: 35px;
 color: black;
 }
 }
-.inner2{
+.inner2
+{
     font-size: 60px;
     color: black;
 }
