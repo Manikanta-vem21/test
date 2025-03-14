@@ -15,6 +15,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+
 <style>
     
 </style>
@@ -247,6 +250,38 @@
       </div>
   
 </div>
+
+<div class="forest">
+  <div class="main-wht">
+    <div class="wht-i-do">
+      <p class="whtIdo"><h2 class="whtIdo-text">Glimpse of My <span>Story</span> Telling</h2></p>
+
+      <p class="whtIdo">In a mysterious, neon-lit forest, a strange <strong>sci-fi egg</strong> pulses with an eerie glow, its surface rippling with alien energy.</p>    
+
+      <p class="whtIdo">Suddenly, cracks form on the egg's metallic shell, emitting a radiant blue light.</p>  
+
+      <p class="whtIdo">The forest trembles as something begins to hatch—revealing a creature unlike anything seen before.</p>  
+
+      <p class="whtIdo">The air hums with an unearthly resonance, marking the beginning of an otherworldly adventure… </p>
+
+    </div>
+    <div class="main-wht-img">
+      <video class="ForestVideo" width="100%" autoplay loop muted playsinline>
+        <source src="images/output_compressed.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</div>
+
+<div class="Sunset">
+  <video autoplay loop muted playsinline class="bg-video">
+      <source src="images/output_compressed-ocean.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+  <h2 class="sunset-text">Waves shimmer in a mesmerizing dance of blues, purples, and gold, painting the ocean with ever-changing hues. ✨</h2>
+</div>
+
 <div class="me">
   <img src="images/IMG-20231119-WA0000.jpg" alt="my photo">
   <h2><span>Manikanta</span> Vempatapu</h2>
@@ -305,7 +340,7 @@
   
   // Initialize
   updateSlider();
-  
+// to play the video when it is in the viewport
   document.addEventListener("DOMContentLoaded", function () {
     const videos = document.querySelectorAll(".product video");
 
@@ -321,7 +356,25 @@
 
     videos.forEach((video) => {
         observer.observe(video);
-    });
+    });   
+});
+// to play the video when it is in the viewport
+document.addEventListener("DOMContentLoaded", function () {
+  const videos = document.querySelectorAll(".ForestVideo");
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+              entry.target.play();
+          } else {
+              entry.target.pause();
+          }
+      });
+  }, { threshold: 0.5 }); // 50% of the video should be visible
+
+  videos.forEach((video) => {
+      observer.observe(video);
+  });
 });
 
 </script>
