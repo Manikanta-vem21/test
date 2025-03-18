@@ -19,8 +19,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
 
 <style>
-    
+  #three-container {
+  position: relative;
+  }
+.label {
+  position: absolute;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background: rgba(206, 44, 44, 0.7);
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  pointer-events: auto; /* Allow interactions */
+  user-select: none;
+}
 </style>
+<script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+        "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+      }
+    }
+  </script>
 </head>
 <body>
     <div class="container">
@@ -273,7 +294,19 @@
     </div>
   </div>
 </div>
+<div class="con-3d">
+  <div id="three-container"></div> 
+   <div class="info-3d">
+    <h2 id="v3d">View in<span> 3D</span></h2>
+    <p>🔘 Click on the white dots to view in 3D</p>
+    <p>🖱️ Scroll to zoom</p>
+    <p>🖱️ Right-click + drag to rotate</p>
+    <p>⚪ White = Unvisited</p>
+    <p>🔴 Red = Visited</p>
+   </div>
+</div>
 
+<script type="module" src="index.js"></script>
 <div class="Sunset">
   <video autoplay loop muted playsinline class="bg-video">
       <source src="images/output_compressed-ocean.mp4" type="video/mp4">
@@ -288,6 +321,7 @@
   <h3>Hello.</h3>
   <p class="abtme">I am a <span>Web Developer</span>.I'm the aspiring <span>Blender 3d</span> artist and I love Electronics.</p>
 </div>
+
 <script>
   let slideIndex = 0;
   const slides = document.querySelectorAll(".slide img");
@@ -385,6 +419,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <footer>
   <div class="below">
+    <h4>Direct Links for 3D view</h4>
+    <div class="easyView">
+      <a class="view3D" href="https://manikanta-vem21.github.io/Nobitha-s" target="_blank">Nobitha</a>
+      <a class="view3D" href="https://manikanta-vem21.github.io/CircuitBoard" target="_blank">Circuit</a>
+      <a class="view3D" href="https://manikanta-vem21.github.io/Bike" target="_blank">Bike</a>
+      <a class="view3D" href="https://manikanta-vem21.github.io/Moon" target="_blank">Moon</a>
+      <a class="view3D" href="https://manikanta-vem21.github.io/Phone" target="_blank">Phone</a>
+      <a class="view3D" href="https://manikanta-vem21.github.io/GrillSpeaker" target="_blank">Speaker</a>
+      <a class="view3D" href="https://manikanta-vem21.github.io/corssMindPlane" target="_blank">Aeroplane</a>
+      <a class="view3D" href="https://manikanta-vem21.github.io/Drone" target="_blank">Sci-fi Drone</a>
+    </div>
     <p class="foot">Where do I Learn...?</p>
     <div class="fot">
       <p class="foot"><a href="https://www.youtube.com/@TheDucky3D" target="_blank">Ducky 3D</a></p>
